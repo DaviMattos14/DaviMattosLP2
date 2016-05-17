@@ -1,0 +1,40 @@
+int aux = 0;
+            int z = 0;
+            int k = 0;
+            int[] W = new int[22];
+            int[] C = new int[22];
+            int[] B = new int[12] { 1, 3, 5, 7, 8, 9, 11, 13, 15, 17, 19, 21 };
+            int[] A = new int[10];
+
+            for (int x = 0; x < 10; x++)
+            {
+                Console.Write("Digite um Numero : ");
+                A[x] = int.Parse(Console.ReadLine());
+            }
+            for (int p = 0; p < 10; p++)
+            {
+
+                C[p] = A[k];
+                k++;
+            }
+            for (int q = 10; q < 22; q++)
+            {
+                C[q] = B[z];
+                z++;
+            }
+            for (int i = 1; i < 22; i++)
+            {
+                for (int j = 0; j < 22; j++)
+                {
+                    if (C[i] > W[j])
+                    {
+                        aux = C[i];
+                        C[i] = W[j];
+                        W[j] = aux;
+                    }
+                }
+            }
+            foreach (int a in W)
+            {
+                Console.WriteLine("{0}", a);
+            }

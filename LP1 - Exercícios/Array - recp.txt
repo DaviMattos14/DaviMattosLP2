@@ -1,0 +1,33 @@
+Console.Write("Digite um Nº correspondente ao total de Números que você irá digitar: ");
+            int qnt1 = int.Parse(Console.ReadLine());
+            int[] N = new int[qnt1];
+            Console.WriteLine("Agora digite " + qnt1 + " Nº: ");
+            for (int i = 0; i < qnt1; i++)
+            {
+                Console.WriteLine("---");
+                N[i] = int.Parse(Console.ReadLine());
+            }
+
+            Console.WriteLine("Novamente digite um Nº correspondente ao total de Números que você irá digitar ");
+            int qnt2 = int.Parse(Console.ReadLine());
+            int[] M = new int[qnt2];
+            Console.WriteLine("Agora digite " + qnt2 + " Nº, mais uma vez:  ");
+            for (int i = 0; i < qnt1; i++)
+            {
+                Console.WriteLine("---");
+                M[i] = int.Parse(Console.ReadLine());
+            }
+            int aux = qnt1 + qnt2;
+            int[] V = new int[aux];
+            for (int i = 0; i < N.Length; i++)
+            {
+                V[i] = N[i];
+            }
+            for (int i = qnt1; i < V.Length; i++)
+            {
+                V[i] = M[i - qnt1];
+            }
+            foreach(int v in V)
+            {
+                Console.WriteLine("{0}", v);
+            }

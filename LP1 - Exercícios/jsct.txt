@@ -1,0 +1,49 @@
+combtotal=new Array(6);
+
+var qdap, qdm, qdq, valorbase, comb, i, descont, combtotal, media, totalcond, mdc , mdt
+
+totalcond = 0;
+
+mdc = 0;
+
+mdt = 0;
+
+qdap = prompt('Informe a quantidade de apartamentos');
+
+valorbase = prompt('Informe o valor base do apartamento ');
+
+for (i = 0; i < qdap; i++)
+
+{
+    
+qdm = prompt('Informe a quantidade de moradores do apartamento ' + (i + 1));
+    
+qdq = prompt('informe a quantidade de quartos do apartamento ' + (i + 1));
+    
+    
+comb[1] = (valorbase * qdq);
+    if (qdm >= 0 && qdm <= 5)
+    
+{
+        descont = comb * (10 / 100);
+        combtotal[1] = comb - descont;
+        document.write('<br> O total a pagar pelo ap. ' + ( i + 1) +  ' é ' + combtotal);
+    }
+    if (qdm < 5 && qdm > 3 )
+    {
+        descont = comb * (5 / 100);
+        combtotal[1] = comb - descont;
+        document.write('<br> O total a pagar pelo ap. ' + ( i + 1) +  ' é ' + combtotal);
+        mdt++;
+    }
+    if (qdm > 5)
+    {
+        document.write('<br> O total a pagar pelo ap. ' + ( i + 1) +  ' é ' + comb);
+        mdc++;
+    }
+    totalcond += combtotal;
+}
+media = totalcond / 5;
+document.write('<br> A média dos condominios é ' + média);
+document.write('<br> Os aps. que possue mais de 5 moradores ' + mdc);
+document.write('<br> Os aps. que possue mais de 3 moradores e menos que 5' + mdt); 

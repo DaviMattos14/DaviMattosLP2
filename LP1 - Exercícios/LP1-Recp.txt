@@ -1,0 +1,15 @@
+ Console.WriteLine("Digite o Nº de vezes que vc quer digitar: ");
+            int qnt = int.Parse(Console.ReadLine());
+
+            int[] N = new int[qnt];
+            for (int i = 0; i < qnt; i++)
+            {
+                Console.WriteLine("----");
+                N[i] = int.Parse(Console.ReadLine());
+            }
+            Console.WriteLine("ORDENANDO OS VALORES DE FORMA INVERSA");
+            for (int j = qnt - 1; j >= 0; j--)
+            {
+                Console.WriteLine("{0}", N[j] );
+            }
+            Console.ReadKey();

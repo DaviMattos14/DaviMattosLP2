@@ -1,0 +1,18 @@
+int maior = int.MinValue;
+            int menor = int.MaxValue;
+            Console.Write("Digite um número inteiro: ");
+            int n = int.Parse(Console.ReadLine());
+            for ( int  i = 0; i < n; i++)
+            {
+                Console.WriteLine("---");
+                int x = int.Parse(Console.ReadLine());
+                if (x < menor)
+                {
+                    menor = x;
+                }
+                if (x > maior)
+                {
+                    maior = x;
+                }
+            }
+            Console.WriteLine("Menor {0}, Maior {1}", menor, maior);

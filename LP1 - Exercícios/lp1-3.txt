@@ -1,0 +1,24 @@
+ Console.WriteLine("Digite os pesos (Digite 0 para parar):");
+            int pesototal;
+            int menorpeso = int.MaxValue;
+            int maiorpeso = 0;
+            int p = 1;
+            int i = 1;
+            while( p != 0)
+            {
+                
+                Console.WriteLine("Peso " + i);
+                p = int.Parse(Console.ReadLine());
+                
+                if (p < menorpeso)
+                {
+                    menorpeso = p;
+                }
+                if (p > maiorpeso)
+                {
+                    maiorpeso = p;
+                }
+
+                i++;
+            }
+            Console.WriteLine("Menor Peso {0}, Maior Peso {1}", menorpeso, menorpeso);

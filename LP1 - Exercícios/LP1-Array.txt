@@ -1,0 +1,20 @@
+﻿int[] N = new int[15];
+            Console.WriteLine("Digite 15 Nº inteiros quaisquer");
+            for (int i = 0; i < 15; i++)
+            {
+                Console.Write(i + "= ");
+                N[i] = int.Parse(Console.ReadLine());
+            }
+            for (int i = 0; i < 15; i++)
+               for (int k = 0; k < 15; k++)
+                   if (N[i] < N[k])
+                   {
+                       int x = N[i];
+                       N[i] = N[k];
+                       N[k] = x;
+                   }
+            Console.WriteLine("Nº Ordenado: ");
+            foreach (int n in N)
+            {
+                Console.WriteLine("{0}", n);
+            }

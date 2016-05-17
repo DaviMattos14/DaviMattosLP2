@@ -1,0 +1,10 @@
+int[] V = new int[100];
+            V[0] = V[1] = 1;
+            for (int i = 2; i < 100; i++)
+            {
+                V[i] = V[i - 1] + V[i - 2];
+            }
+            foreach (int v in V)
+            {
+                Console.WriteLine("{0}", v);
+            }

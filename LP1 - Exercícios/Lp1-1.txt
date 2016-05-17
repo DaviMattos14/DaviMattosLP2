@@ -1,0 +1,41 @@
+inicio:
+            List<int> numeros = new List<int>
+
+               ();
+        try
+        {
+            Console.Write("Digite um número inteiro ;");
+            int n = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < n; i++)
+            {
+                Console.WriteLine("---");
+                int x = 0;
+                int.TryParse(Console.ReadLine(), out x);
+                numeros.Add(x);
+            }
+            numeros = numeros.OrderBy(c => c).ToList();
+            Console.WriteLine("Menor Nº; " + numeros.FirstOrDefault());
+            Console.WriteLine("Maior Nº; " + numeros.LastOrDefault());
+            Console.WriteLine("Refazer? 1-Sim 2-Não");
+            int resp = int.Parse(Console.ReadLine());
+            if (resp == 1)
+            {
+                Console.Clear();
+                goto inicio;
+            }
+            else
+            {
+                Console.ReadLine();
+            }
+        }
+            catch (FormatException fEx )
+            {
+                Console.WriteLine("FORMATO ERRADO!");
+                Console.WriteLine("Refazer? 1-Sim 2-Não");
+                int resp = int.Parse(Console.ReadLine());
+                if (resp == 1)
+                {
+                    Console.Clear();
+                    goto inicio;
+                }
