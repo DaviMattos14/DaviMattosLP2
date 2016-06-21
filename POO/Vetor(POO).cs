@@ -21,7 +21,28 @@ namespace ConsoleApplication1
                 c.modelo = Console.ReadLine();
                 carro.Add(c);
             }
-
+            Console.WriteLine("Digite uma placa:");
+            string placa = Console.ReadLine();
+            int j = 0;
+            bool aux = true;
+            while (aux)
+            {
+                if (placa != carro[j].Placa)
+                {
+                    
+                    Console.WriteLine("Placa: " + carro[j].Placa);
+                    Console.WriteLine("Ano: " + carro[j].Ano);
+                    Console.WriteLine("Modelo: " + carro[j].modelo);
+                    aux = false;
+                }
+                if (j > 2 * n)
+                {
+                    Console.WriteLine("Placa não encontrada!");
+                    aux = false;
+                }
+                j++;
+                Console.ReadKey();
+            }
         }
     }
     class Carros
