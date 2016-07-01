@@ -57,14 +57,14 @@ namespace WindowsFormsApplication2
                    }
             }
 
-            if (questão.Text == "Questão 1.")
+            if (questão.Text == "Questão 2.")
             {
                 if (Verificar2(true))
                 {
                     next.Enabled = true;
                 }
             }
-            if (questão.Text == "Questão 1.")
+            if (questão.Text == "Questão 3.")
             {
                 if (Verificar3(true))
                 {
@@ -120,7 +120,9 @@ namespace WindowsFormsApplication2
                         if(Resposta1.Text != "")
                             Pergunta3();
                     }
-                    if (questão.Text == "Questão 3.") { this.Close(); }
+                    if (questão.Text == "Questão 3.") {
+                        if (Resposta1.Text != "")
+                        this.Close(); }
                 }
                 private Boolean Verificar2(bool valor)
                 {
