@@ -41,7 +41,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(348, 64);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Quiz sobre a África";
+            this.label1.Text = "Quiz ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button1
