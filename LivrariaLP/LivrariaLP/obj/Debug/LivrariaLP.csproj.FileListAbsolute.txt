@@ -1,0 +1,6 @@
+c:\users\celdemir\documents\visual studio 2013\Projects\LivrariaLP\LivrariaLP\bin\Debug\LivrariaLP.exe.config
+c:\users\celdemir\documents\visual studio 2013\Projects\LivrariaLP\LivrariaLP\obj\Debug\LivrariaLP.csprojResolveAssemblyReference.cache
+c:\users\celdemir\documents\visual studio 2013\Projects\LivrariaLP\LivrariaLP\bin\Debug\LivrariaLP.exe
+c:\users\celdemir\documents\visual studio 2013\Projects\LivrariaLP\LivrariaLP\bin\Debug\LivrariaLP.pdb
+c:\users\celdemir\documents\visual studio 2013\Projects\LivrariaLP\LivrariaLP\obj\Debug\LivrariaLP.exe
+c:\users\celdemir\documents\visual studio 2013\Projects\LivrariaLP\LivrariaLP\obj\Debug\LivrariaLP.pdb
