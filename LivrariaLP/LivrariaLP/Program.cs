@@ -43,25 +43,32 @@ namespace LivrariaLP
             if (menu == 5) { }
         }
 
-        private static void Cadastrar() 
+        private static void Cadastrar()
         {
-            Livro l = new Livro();
             Estoque e = new Estoque();
             Console.Clear();
-            Console.Write("Nome do livro: ");
-            l.nomeLivro = Console.ReadLine();
-            Console.Write("Autor: ");
-            l.autor = Console.ReadLine();
-            Console.Write("Genero: ");
-            l.genero = Console.ReadLine();
-            Console.Write("ISBN: ");
-            l.id_livro = Console.ReadLine();
-            Console.Write("Quantidade: ");
-            l.quantidade = int.Parse(Console.ReadLine());
-            Console.Write("Preço: ");
-            l.preco = double.Parse(Console.ReadLine());
-            e.AdicionarEstoque(l);
-            Console.WriteLine("\n Cadastrar outro livro? 1- Sim 2- não");
+            Console.WriteLine("Cadastrar quantos livros?");
+            int livrosCadastrar = int.Parse(Console.ReadLine());
+            for (int i = 0; i < livrosCadastrar; i++)
+            {
+                Livro l = new Livro();
+                Console.Clear();
+                Console.Write("Nome do livro: ");
+                l.NomeLivro = Console.ReadLine();
+                Console.Write("Autor: ");
+                l.Autor = Console.ReadLine();
+                //Console.Write("Genero: ");
+                //l.Genero = Console.ReadLine();
+                Console.Write("ISBN: ");
+                l.Id_livro = Console.ReadLine();
+                //Console.Write("Quantidade: ");
+                //l.Quantidade = int.Parse(Console.ReadLine());
+                //Console.Write("Preço: ");
+                //l.Preco = double.Parse(Console.ReadLine());
+                e.AdicionarEstoque(l);
+            }
+            e.Consultar();
+            Console.WriteLine("\n Cadastrar mais livros? 1- Sim 2- não");
             int opcao = int.Parse(Console.ReadLine());
             if (opcao == 1)
                 Cadastrar();
@@ -70,3 +77,6 @@ namespace LivrariaLP
         }
     }
 }
+    
+
+    

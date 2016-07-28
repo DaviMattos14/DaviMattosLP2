@@ -8,11 +8,11 @@ namespace LivrariaLP
 {
     class Livro
     {
-        public string nomeLivro { get; set; }
-        public string autor { get; set; }
-        public string genero { get; set; }
-        public string id_livro { get; set; }
-        public int quantidade { get; set; }
-        public double preco { get; set; }
+        public string NomeLivro { get; set; }
+        public string Autor { get; set; }
+        public string Genero { get; set; }
+        public string Id_livro { get; set; }
+        public int Quantidade { get; set; }
+        public double Preco { get; set; }
     }
 }

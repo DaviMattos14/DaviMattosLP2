@@ -25,14 +25,16 @@ namespace LivrariaLP
             string isbn = Console.ReadLine();
             for (int i = 0; i < livros.Count; i++)
             {
-                if (isbn != livros[i].id_livro)
+                int aux = 0;
+                if (isbn == livros[i].Id_livro)
                 {
-                    Console.WriteLine("Nome: " + livros[i].nomeLivro);
-                    Console.WriteLine("Autor: " + livros[i].autor);
-                    Console.WriteLine("ISBN: " + livros[i].id_livro);
+                    Console.WriteLine("Nome: " + livros[i].NomeLivro);
+                    Console.WriteLine("Autor: " + livros[i].Autor);
+                    Console.WriteLine("ISBN: " + livros[i].Id_livro);
                     i = livros.Count;
+                    aux++;
                 }
-                if (i > 2 * livros.Count)
+                if (i == livros.Count && aux == 0)
                 {
                     Console.WriteLine("Livro não encontrado!");
                 }
