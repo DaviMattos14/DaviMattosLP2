@@ -45,3 +45,15 @@ C:\Users\Celdemir\Desktop\Quiz de história2\WindowsFormsApplication2\obj\Debug\
 C:\Users\Celdemir\Desktop\Quiz de história2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.pergunta1.resources
 C:\Users\Celdemir\Desktop\Quiz de história2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
 C:\Users\Celdemir\Desktop\Quiz de história2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
+C:\DaviMattosLP2\Quiz de história2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe.config
+C:\DaviMattosLP2\Quiz de história2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.exe
+C:\DaviMattosLP2\Quiz de história2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.pdb
+C:\DaviMattosLP2\Quiz de história2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe
+C:\DaviMattosLP2\Quiz de história2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.pdb
+C:\DaviMattosLP2\Quiz de história2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
+C:\DaviMattosLP2\Quiz de história2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Form1.resources
+C:\DaviMattosLP2\Quiz de história2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.nivel2.resources
+C:\DaviMattosLP2\Quiz de história2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Nivel3.resources
+C:\DaviMattosLP2\Quiz de história2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.pergunta1.resources
+C:\DaviMattosLP2\Quiz de história2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+C:\DaviMattosLP2\Quiz de história2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
