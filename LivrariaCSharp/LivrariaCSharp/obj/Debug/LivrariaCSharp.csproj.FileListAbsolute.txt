@@ -1,6 +1,0 @@
-c:\users\celdemir\documents\visual studio 2013\Projects\LivrariaCSharp\LivrariaCSharp\bin\Debug\LivrariaCSharp.exe.config
-c:\users\celdemir\documents\visual studio 2013\Projects\LivrariaCSharp\LivrariaCSharp\bin\Debug\LivrariaCSharp.exe
-c:\users\celdemir\documents\visual studio 2013\Projects\LivrariaCSharp\LivrariaCSharp\bin\Debug\LivrariaCSharp.pdb
-c:\users\celdemir\documents\visual studio 2013\Projects\LivrariaCSharp\LivrariaCSharp\obj\Debug\LivrariaCSharp.csprojResolveAssemblyReference.cache
-c:\users\celdemir\documents\visual studio 2013\Projects\LivrariaCSharp\LivrariaCSharp\obj\Debug\LivrariaCSharp.exe
-c:\users\celdemir\documents\visual studio 2013\Projects\LivrariaCSharp\LivrariaCSharp\obj\Debug\LivrariaCSharp.pdb
