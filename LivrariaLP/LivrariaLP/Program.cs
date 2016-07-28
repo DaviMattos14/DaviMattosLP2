@@ -10,7 +10,11 @@ namespace LivrariaLP
     {
         static void Main(string[] args)
         {
-        menu:
+            Menu();//
+        }
+
+        private static void Menu()
+        {
             Console.Clear();
             Console.WriteLine("Menu: \n 1.Cadastrar \n 2.Consultar \n 3.Alterar \n 4.Remover \n 5.Sair \n ----------");
             int menu = int.Parse(Console.ReadLine());
@@ -20,27 +24,7 @@ namespace LivrariaLP
             ;
             if (menu == 1)
             {
-            cadastrar:
-                Console.Clear();
-                Console.Write("Nome do livro: ");
-                l.nomeLivro = Console.ReadLine();
-                Console.Write("Autor: ");
-                l.autor = Console.ReadLine();
-                Console.Write("Genero: ");
-                l.genero = Console.ReadLine();
-                Console.Write("ISBN: ");
-                l.id_livro = Console.ReadLine();
-                Console.Write("Quantidade: ");
-                l.quantidade = int.Parse(Console.ReadLine());
-                Console.Write("Preço: ");
-                l.preco = double.Parse(Console.ReadLine());
-                e.AdicionarEstoque(l);
-                Console.WriteLine("Cadastrar outro livro? 1- Sim 2- não");
-                int opcao = int.Parse(Console.ReadLine());
-                if (opcao == 1)
-                    goto cadastrar;
-                if (opcao == 2)
-                    goto menu;
+                Cadastrar();//
             }
             /* Consultar*/
             if (menu == 2)
@@ -55,8 +39,34 @@ namespace LivrariaLP
             if (menu == 4)
             {
             }
-            /* */
+            /* Sair */
             if (menu == 5) { }
+        }
+
+        private static void Cadastrar() 
+        {
+            Livro l = new Livro();
+            Estoque e = new Estoque();
+            Console.Clear();
+            Console.Write("Nome do livro: ");
+            l.nomeLivro = Console.ReadLine();
+            Console.Write("Autor: ");
+            l.autor = Console.ReadLine();
+            Console.Write("Genero: ");
+            l.genero = Console.ReadLine();
+            Console.Write("ISBN: ");
+            l.id_livro = Console.ReadLine();
+            Console.Write("Quantidade: ");
+            l.quantidade = int.Parse(Console.ReadLine());
+            Console.Write("Preço: ");
+            l.preco = double.Parse(Console.ReadLine());
+            e.AdicionarEstoque(l);
+            Console.WriteLine("\n Cadastrar outro livro? 1- Sim 2- não");
+            int opcao = int.Parse(Console.ReadLine());
+            if (opcao == 1)
+                Cadastrar();
+            else
+                Menu();//
         }
     }
 }

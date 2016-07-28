@@ -21,23 +21,22 @@ namespace LivrariaLP
         public void Consultar()
         {
             Console.Clear();
-            Console.WriteLine("Digite o ISBN do Livro:");
-            string id_livro = Console.ReadLine();
-                if (id_livro != livros[1].id_livro)
+            Console.WriteLine("ISBN: ");
+            string isbn = Console.ReadLine();
+            for (int i = 0; i < livros.Count; i++)
+            {
+                if (isbn != livros[i].id_livro)
                 {
-
-                    Console.WriteLine("Nome do Livro: " + livros[1].nomeLivro);
-                    Console.WriteLine("Autor: " + livros[1].autor);
-                    Console.WriteLine("Genero: " + livros[1].genero);
-                    Console.WriteLine("ISBN: " + livros[1].id_livro);
-                    Console.WriteLine("Quantidade: " + livros[1].quantidade);
-                    Console.WriteLine("Preço: " + livros[1].preco);
+                    Console.WriteLine("Nome: " + livros[i].nomeLivro);
+                    Console.WriteLine("Autor: " + livros[i].autor);
+                    Console.WriteLine("ISBN: " + livros[i].id_livro);
+                    i = livros.Count;
                 }
-                else
+                if (i > 2 * livros.Count)
                 {
                     Console.WriteLine("Livro não encontrado!");
                 }
-                Console.ReadKey();
+            }
         }
     }
 }
