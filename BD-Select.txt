@@ -13,3 +13,7 @@ select * from Salesman where city = 'London' or (status >= 10 and status <= 20);
 select * from Salesman where city = 'London' or status between 10 and 20;
 
 select * from Salesman, Pieces;
+
+select * from Salesman,SalesmanPieces
+where Salesman.scod = SalesmanPieces.scod;
+
