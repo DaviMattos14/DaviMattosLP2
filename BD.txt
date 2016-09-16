@@ -1,0 +1,42 @@
+-- SELECT DISTINCT scod FROM SalesmanPieces;
+
+-- SELECT pcod, weight, (weight * 454) FROM Pieces;
+
+--	SELECT pcod, city, (WEIGHT * 454)
+--	FROM Pieces
+--	ORDER BY city DESC; 
+
+--	SELECT pcod, city, WEIGHT * 454
+--	FROM Pieces
+--	ORDER BY 2 ASC, 3 DESC; 
+
+--SELECT * FROM Salesman, SalesmanPieces
+ --WHERE Salesman.scod = SalesmanPieces.scod
+
+--SELECT Salesman.scod, Salesman.sname, Salesman.city, SalesmanPieces.pcod 
+ --FROM Salesman, SalesmanPieces, Pieces
+ --WHERE Salesman.scod = SalesmanPieces.scod
+ --AND SalesmanPieces.pcod = Pieces.pcod
+ --AND SalesmanPieces.pcod = 'P2
+
+ --SELECT Salesman.* FROM Salesman, SalesmanPieces, Pieces
+ --WHERE Salesman.scod = SalesmanPieces.scod
+ --AND SalesmanPieces.pcod = Pieces.pcod
+ --AND Pieces.color = 'RED';
+
+ --SELECT s.* FROM Salesman AS s, SalesmanPieces AS sp, Pieces p
+ --Where s.scod = sp.scod
+ --AND sp.pcod = p.pcod
+ --AND p.color ='Red';
+
+--SELECT a.scod, a.sname, a.city, b.scod, b.sname, b.city 
+--FROM Salesman a, Salesman b
+-- Where a.city = b.city AND a.scod < b.scod 
+ 
+ --SELECT DISTINCT s.sname, p.pname FROM Pieces p, Salesman s, SalesmanPieces sp
+ --WHERE s.city = 'London'
+ --and p.weight * 454 BETWEEN 2000 AND 6000
+ --AND s.scod = sp.scod
+ --and p.pcod = sp.pcod;
+ 
+ SELECT pcod , sum(qty) as total_fornecido FROM SalesmanPieces GROUP BY pcod
