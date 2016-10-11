@@ -1,0 +1,181 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace WindowsFormsApplication1
+{
+    public partial class Form1 : Form
+    {
+        int player = 0;
+        public Form1()
+        {
+            InitializeComponent();
+            int player = 0;
+            l1_menssage.Text = "Jogador X";
+            while (string.Format("{0}", t9) == "") 
+            {
+                MessageBox.Show("FIM DE JOGO");
+                l1_menssage.Text = "FIM DE JOGO";
+            }
+
+        }
+
+        private void t1_Click(object sender, EventArgs e)
+        {
+            if (player % 2 == 0)
+            {
+                t1.Text = "X";
+                l1_menssage.Text = "Jogador O";
+                player++;
+            }
+            else
+            {
+                t1.Text = "O";
+                l1_menssage.Text = "Jogador X";
+                player++;
+            }
+        }
+
+        private void t2_Click(object sender, EventArgs e)
+        {
+            if (player % 2 == 0)
+            {
+                t2.Text = "X";
+                l1_menssage.Text = "Jogador O";
+                player++;
+            }
+            else
+            {
+                t2.Text = "O";
+                l1_menssage.Text = "Jogador X";
+                player++;
+            }
+        
+        }
+
+        private void t3_Click(object sender, EventArgs e)
+        {
+            if (player % 2 == 0)
+            {
+                t3.Text = "X";
+                l1_menssage.Text = "Jogador O";
+                player++;
+            }
+            else
+            {
+                t3.Text = "O";
+                l1_menssage.Text = "Jogador X";
+                player++;
+            }
+        
+        }
+
+        private void t4_Click(object sender, EventArgs e)
+        {
+            if (player % 2 == 0)
+            {
+                t4.Text = "X";
+                l1_menssage.Text = "Jogador O";
+                player++;
+            }
+            else
+            {
+                t4.Text = "O";
+                l1_menssage.Text = "Jogador X";
+                player++;
+            }
+        
+        }
+
+        private void t5_Click(object sender, EventArgs e)
+        {
+            if (player % 2 == 0)
+            {
+                t5.Text = "X";
+                l1_menssage.Text = "Jogador O";
+                player++;
+            }
+            else
+            {
+                t5.Text = "O";
+                l1_menssage.Text = "Jogador X";
+                player++;
+            }
+        
+        }
+
+        private void t6_Click(object sender, EventArgs e)
+        {
+            if (player % 2 == 0)
+            {
+                t6.Text = "X";
+                l1_menssage.Text = "Jogador O";
+                player++;
+            }
+            else
+            {
+                t6.Text = "O";
+                l1_menssage.Text = "Jogador X";
+                player++;
+            }
+        
+        }
+
+        private void t7_Click(object sender, EventArgs e)
+        {
+            if (player % 2 == 0)
+            {
+                t7.Text = "X";
+                l1_menssage.Text = "Jogador O";
+                player++;
+            }
+            else
+            {
+                t7.Text = "O";
+                l1_menssage.Text = "Jogador X";
+                player++;
+            }
+        
+        }
+
+        private void t8_Click(object sender, EventArgs e)
+        {
+            if (player % 2 == 0)
+            {
+                t8.Text = "X";
+                l1_menssage.Text = "Jogador O";
+                player++;
+            }
+            else
+            {
+                t8.Text = "O";
+                l1_menssage.Text = "Jogador X";
+                player++;
+            }
+        
+        }
+
+        private void t9_Click(object sender, EventArgs e)
+        {
+            if (player % 2 == 0)
+            {
+                t9.Text = "X";
+                l1_menssage.Text = "Jogador O";
+                player++;
+            }
+            else
+            {
+                t9.Text = "O";
+                l1_menssage.Text = "Jogador X";
+                player++;
+            }
+        
+        }
+    }
+}
