@@ -12,111 +12,120 @@ namespace WindowsFormsApplication1
 {
     public partial class Form1 : Form
     {
-        double num1;
-        string ultimaOperacao;
+        int player = 9;
+        public void Faz(Button b)
+        {
+            if (player % 2 == 0)
+            {
+                b.Text = "X";
+                player--;
+            }
+            else
+            {
+                b.Text = "O";
+                player--;
+            }
+        }
+
+        public string Verificar()
+        {
+            if(b1.Text == b2.Text && b1.Text == b3.Text)
+            {
+                return b1.Text.ToString();
+            }
+            else  if (b4.Text == b5.Text && b4.Text == b6.Text)
+            {
+                return b4.Text.ToString();
+            }
+            else  if (b7.Text == b8.Text && b7.Text == b9.Text)
+            {
+                return b7.Text.ToString();
+            }
+            else  if (b1.Text == b4.Text && b1.Text == b7.Text)
+            {
+                return b7.Text.ToString();
+            }
+            else if (b2.Text == b5.Text && b2.Text == b8.Text)
+            {
+                return b2.Text.ToString();
+            }
+            else if (b3.Text == b6.Text && b3.Text == b9.Text)
+            {
+                return b3.Text.ToString();
+            }
+            else if (b1.Text == b5.Text && b1.Text == b9.Text)
+            {
+                return b1.Text.ToString();
+            }
+            else if (b3.Text == b5.Text && b3.Text == b7.Text)
+            {
+                return b3.Text.ToString();
+            }
+            if (player == 0)
+                return "Velha";
+            return " ";
+        }
+        string vencedor;
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void btn1_Click(object sender, EventArgs e)
+        private void b1_Click(object sender, EventArgs e)
         {
-            txtEntrada.Text += "1";
+            Faz(b1);
+          vencedor = Verificar();
+
         }
 
-        private void btn2_Click(object sender, EventArgs e)
+        private void b2_Click(object sender, EventArgs e)
         {
-            txtEntrada.Text += "2";
+            Faz(b2);
+            vencedor = Verificar();
         }
 
-        private void btn3_Click(object sender, EventArgs e)
+        private void b3_Click(object sender, EventArgs e)
         {
-            txtEntrada.Text += "3";
+            Faz(b3);
+            vencedor = Verificar();
         }
 
-        private void btn4_Click(object sender, EventArgs e)
+        private void b4_Click(object sender, EventArgs e)
         {
-            txtEntrada.Text += "4";
+            Faz(b4);
+            vencedor = Verificar();
         }
 
-        private void btn5_Click(object sender, EventArgs e)
+        private void b5_Click(object sender, EventArgs e)
         {
-            txtEntrada.Text += "5";
+            Faz(b5);
+            vencedor = Verificar();
         }
 
-        private void btn6_Click(object sender, EventArgs e)
+        private void b6_Click(object sender, EventArgs e)
         {
-            txtEntrada.Text += "6";
+            Faz(b6);
+            vencedor = Verificar();
         }
 
-        private void btn7_Click(object sender, EventArgs e)
+        private void b7_Click(object sender, EventArgs e)
         {
-            txtEntrada.Text += "7";
+            Faz(b7);
+            vencedor = Verificar();
         }
 
-        private void btn8_Click(object sender, EventArgs e)
+        private void b8_Click(object sender, EventArgs e)
         {
-            txtEntrada.Text += "8";
+            Faz(b8);
+            vencedor = Verificar();
         }
 
-        private void btn9_Click(object sender, EventArgs e)
+        private void b9_Click(object sender, EventArgs e)
         {
-            txtEntrada.Text += "9";
+            Faz(b9);
+            vencedor = Verificar();
         }
 
-        private void btn0_Click(object sender, EventArgs e)
-        {
-            txtEntrada.Text += "0";
-        }
-
-        private void btnSoma_Click(object sender, EventArgs e)
-        {
-            num1 += double.Parse(txtEntrada.Text);
-            txtEntrada.Clear();
-            ultimaOperacao = "soma";
-        }
-
-        private void btnMultiplicar_Click(object sender, EventArgs e)
-        {
-            num1 += double.Parse(txtEntrada.Text);
-            txtEntrada.Clear();
-            ultimaOperacao = "multiplicacao";
-        }
-
-        private void btnDivisao_Click(object sender, EventArgs e)
-        {
-            num1 += double.Parse(txtEntrada.Text);
-            txtEntrada.Clear();
-            ultimaOperacao = "divisao";
-        }
-
-        private void btnMenos_Click(object sender, EventArgs e)
-        {
-            num1 += double.Parse(txtEntrada.Text);
-            txtEntrada.Clear();
-            ultimaOperacao = "subtracao";
-        }
-
-        private void btnLimpar_Click(object sender, EventArgs e)
-        {
-            num1 = 0;
-            txtEntrada.Clear();
-        }
-
-        private void btnIgual_Click(object sender, EventArgs e)
-        {
-            if (ultimaOperacao == "soma")
-                num1 = num1 + double.Parse(txtEntrada.Text);
-            if (ultimaOperacao == "multiplicacao")
-                num1 = num1 * double.Parse(txtEntrada.Text);
-            if (ultimaOperacao == "subtracao")
-                num1 = num1 - double.Parse(txtEntrada.Text);
-            else if (ultimaOperacao == "divisao")
-                num1 = num1 / double.Parse(txtEntrada.Text);
-            txtEntrada.Clear();
-            txtEntrada.Text = num1.ToString();
-            num1 = 0;
-        }
-      
+        MessageBox.
     }
 }
