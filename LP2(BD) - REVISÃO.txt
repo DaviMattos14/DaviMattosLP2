@@ -1,0 +1,96 @@
+MySqlConnection : Responsável por genrenciar uma conexão com BD.
+
+MySqlCommand : Controla as operações no BD.
+
+ * Depende do Tipo de operação pra escolher o método apropriado.
+
+ExecuteReader: Retornar tabela
+
+ExecuteNonQuery: Manuntenção(ex: update, delete, etc)
+
+ExecuteScalar: Retorna um valor numérico
+
+------------------------------------------------------------------------------------------
+
+ * Cofiguração de uma operação no BD.
+
+MySqlConnection conn = new MySqlConnection("Server=localhost;Database=lp2;Uid=root;Pwd=");
+
+MySqlCommand cmd = new MySqlCommand();
+cmd.Connection = conn;
+cmd.CommandText = "SELECT COUNT(1) FROM Pessoa;";
+cmd.Connection.Open(); // conn.Open();
+
+------------------------------------------------------------------------------------------
+
+ * Execução
+
+cmd.Connection.Open(); // conn.Open();
+int result = Convert.ToInt32(cmd.ExecuteScalar()); -- Usa apenas para operações que ultilizam valor numérico
+cmd.Connection.Close(); // conn.Close();
+
+------------------------------------------------------------------------------------------
+
+ExecuteReader: Realiza consultas que retornam dados em tabelas.
+
+Classe: MySqlDataReader
+
+MySqlDataReader resultado;
+resultado = cmd.ExecuteReader();
+
+if(resultado.HasRows)
+	{
+	while (resultado.Read()) 
+		{
+		  int id = resultado.GetINt32(0);
+		  char sexo = resultado.GetChar(1);
+		}
+	}
+
+------------------------------------------------------------------------------------------
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using MySql.Data;
+using MySql.Data.MySqlClient;
+
+namespace Serjão_berranteiro
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            MySqlConnection conn = new MySqlConnection("Server=localhost;Database=turma;Uid=root;Pwd=");
+
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = conn;
+            //cmd.CommandText = "SELECT COUNT(1) FROM Pessoa;";
+            cmd.CommandText = "SELECT * FROM Pessoa;";
+            //cmd.Connection.Open(); 
+            conn.Open();
+            ////int result = (int)cmd.ExecuteScalar();
+            //int result = Convert.ToInt32(cmd.ExecuteScalar());
+            MySqlDataReader resultado = cmd.ExecuteReader();
+            if(resultado.HasRows)
+            {
+                while(resultado.Read())
+                {
+                    int id = resultado.GetInt32(0);
+                    string nome = resultado.GetString(1);
+                    Console.WriteLine("ID: {0} Nome: {1}", id, nome);
+                }
+            }
+            conn.Close();
+            //Console.WriteLine(result);
+            
+
+
+        }
+    }
+}
+
+------------------------------------------------------------------------------------------
+
