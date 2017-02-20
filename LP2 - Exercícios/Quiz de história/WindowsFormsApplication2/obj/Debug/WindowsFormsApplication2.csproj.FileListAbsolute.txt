@@ -1,0 +1,26 @@
+c:\users\celdemir\documents\Microsoft Press\Visual CSharp Step By Step\Chapter 1\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe.config
+c:\users\celdemir\documents\Microsoft Press\Visual CSharp Step By Step\Chapter 1\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe
+c:\users\celdemir\documents\Microsoft Press\Visual CSharp Step By Step\Chapter 1\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.pdb
+c:\users\celdemir\documents\Microsoft Press\Visual CSharp Step By Step\Chapter 1\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
+c:\users\celdemir\documents\Microsoft Press\Visual CSharp Step By Step\Chapter 1\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Form1.resources
+c:\users\celdemir\documents\Microsoft Press\Visual CSharp Step By Step\Chapter 1\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.pergunta1.resources
+c:\users\celdemir\documents\Microsoft Press\Visual CSharp Step By Step\Chapter 1\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+c:\users\celdemir\documents\Microsoft Press\Visual CSharp Step By Step\Chapter 1\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
+c:\users\celdemir\documents\Microsoft Press\Visual CSharp Step By Step\Chapter 1\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.exe
+c:\users\celdemir\documents\Microsoft Press\Visual CSharp Step By Step\Chapter 1\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.pdb
+C:\Users\Celdemir\Desktop\Quiz de história\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe.config
+C:\Users\Celdemir\Desktop\Quiz de história\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.exe
+C:\Users\Celdemir\Desktop\Quiz de história\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.pdb
+D:\DaviMattosLP2\Quiz de história\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe.config
+D:\DaviMattosLP2\Quiz de história\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.exe
+D:\DaviMattosLP2\Quiz de história\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.pdb
+C:\Users\alunoct\Desktop\Quiz de história\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe.config
+C:\Users\alunoct\Desktop\Quiz de história\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.exe
+C:\Users\alunoct\Desktop\Quiz de história\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.pdb
+C:\Users\alunoct\Desktop\Quiz de história\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe
+C:\Users\alunoct\Desktop\Quiz de história\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.pdb
+C:\Users\alunoct\Desktop\Quiz de história\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
+C:\Users\alunoct\Desktop\Quiz de história\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Form1.resources
+C:\Users\alunoct\Desktop\Quiz de história\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.pergunta1.resources
+C:\Users\alunoct\Desktop\Quiz de história\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+C:\Users\alunoct\Desktop\Quiz de história\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache

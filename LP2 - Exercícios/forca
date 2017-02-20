@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string palavra_secreta = Console.ReadLine();
+            
+            string[] A = new string[palavra_secreta.Length];
+            int i = 0;
+            while (i < palavra_secreta.Length)
+            {
+                A[i] = "*";
+                i++;
+            }
+            for (int j = 0; true; j++)
+            {
+                string letra = Console.ReadLine();
+                if (letra[0] == palavra_secreta[j])
+                {
+                    A[j] = letra;
+                    foreach (string a in A)
+                    {
+                        Console.Write(A);
+                    }
+                }
+            }
+            
+            
+            
+            
+        }
+    }
+}

@@ -1,0 +1,16 @@
+-- SELECT * FROM Salesman;
+
+-- SELECT sname, city FROM Salesman
+
+-- SELECT DISTINCT scod FROM SalesmanPieces;
+
+-- SELECT pcod, weight, (weight * 454) FROM Pieces;
+
+--	SELECT pcod, city, (WEIGHT * 454)
+--	FROM Pieces
+--	ORDER BY city DESC; 
+
+--	SELECT pcod, city, WEIGHT * 454
+--	FROM Pieces
+--	ORDER BY 2 ASC, 3 DESC; 
+

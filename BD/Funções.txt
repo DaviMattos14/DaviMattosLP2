@@ -1,0 +1,15 @@
+SELECT COUNT(*) FROM Salesman;
+
+  SELECT COUNT(*) FROM Pieces WHERE color = 'Red';
+
+  SELECT COUNT(DISTINCT scod) FROM SalesmanPieces;
+
+  SELECT COUNT(DISTINCT status) FROM Salesman WHERE city = 'London';
+
+  SELECT MIN(status) FROM Salesman;
+
+  SELECT MAX(status) FROM Salesman;
+
+  SELECT pcod, SUM(qty) AS total_fornecido FROM SalesmanPieces GROUP BY pcod;
+
+  SELECT pcod FROM SalesmanPieces GROUP BY pcod HAVING COUNT(*) > 1; 
