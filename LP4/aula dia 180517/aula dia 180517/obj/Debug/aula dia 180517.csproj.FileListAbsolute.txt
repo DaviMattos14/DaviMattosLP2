@@ -1,0 +1,28 @@
+c:\users\lab enii\documents\visual studio 2013\Projects\aula dia 180517\aula dia 180517\bin\Debug\aula dia 180517.exe.config
+c:\users\lab enii\documents\visual studio 2013\Projects\aula dia 180517\aula dia 180517\obj\Debug\aula dia 180517.csprojResolveAssemblyReference.cache
+c:\users\lab enii\documents\visual studio 2013\Projects\aula dia 180517\aula dia 180517\obj\Debug\MainWindow.baml
+c:\users\lab enii\documents\visual studio 2013\Projects\aula dia 180517\aula dia 180517\obj\Debug\MainWindow.g.cs
+c:\users\lab enii\documents\visual studio 2013\Projects\aula dia 180517\aula dia 180517\obj\Debug\App.g.cs
+c:\users\lab enii\documents\visual studio 2013\Projects\aula dia 180517\aula dia 180517\obj\Debug\aula dia 180517_MarkupCompile.cache
+c:\users\lab enii\documents\visual studio 2013\Projects\aula dia 180517\aula dia 180517\obj\Debug\aula dia 180517.g.resources
+c:\users\lab enii\documents\visual studio 2013\Projects\aula dia 180517\aula dia 180517\obj\Debug\aula_dia_180517.Properties.Resources.resources
+c:\users\lab enii\documents\visual studio 2013\Projects\aula dia 180517\aula dia 180517\obj\Debug\aula dia 180517.csproj.GenerateResource.Cache
+c:\users\lab enii\documents\visual studio 2013\Projects\aula dia 180517\aula dia 180517\bin\Debug\aula dia 180517.exe
+c:\users\lab enii\documents\visual studio 2013\Projects\aula dia 180517\aula dia 180517\bin\Debug\aula dia 180517.pdb
+c:\users\lab enii\documents\visual studio 2013\Projects\aula dia 180517\aula dia 180517\bin\Debug\MySql.Data.dll
+c:\users\lab enii\documents\visual studio 2013\Projects\aula dia 180517\aula dia 180517\obj\Debug\aula dia 180517.exe
+c:\users\lab enii\documents\visual studio 2013\Projects\aula dia 180517\aula dia 180517\obj\Debug\aula dia 180517.pdb
+C:\Users\Davi\Desktop\aula dia 180517\aula dia 180517\bin\Debug\aula dia 180517.exe.config
+C:\Users\Davi\Desktop\aula dia 180517\aula dia 180517\obj\Debug\aula dia 180517.exe
+C:\Users\Davi\Desktop\aula dia 180517\aula dia 180517\obj\Debug\aula dia 180517.pdb
+C:\Users\Davi\Desktop\aula dia 180517\aula dia 180517\obj\Debug\aula dia 180517.csprojResolveAssemblyReference.cache
+C:\Users\Davi\Desktop\aula dia 180517\aula dia 180517\obj\Debug\MainWindow.baml
+C:\Users\Davi\Desktop\aula dia 180517\aula dia 180517\obj\Debug\MainWindow.g.cs
+C:\Users\Davi\Desktop\aula dia 180517\aula dia 180517\obj\Debug\App.g.cs
+C:\Users\Davi\Desktop\aula dia 180517\aula dia 180517\obj\Debug\aula dia 180517_MarkupCompile.cache
+C:\Users\Davi\Desktop\aula dia 180517\aula dia 180517\obj\Debug\aula dia 180517.g.resources
+C:\Users\Davi\Desktop\aula dia 180517\aula dia 180517\obj\Debug\aula_dia_180517.Properties.Resources.resources
+C:\Users\Davi\Desktop\aula dia 180517\aula dia 180517\obj\Debug\aula dia 180517.csproj.GenerateResource.Cache
+C:\Users\Davi\Desktop\aula dia 180517\aula dia 180517\bin\Debug\aula dia 180517.exe
+C:\Users\Davi\Desktop\aula dia 180517\aula dia 180517\bin\Debug\aula dia 180517.pdb
+C:\Users\Davi\Desktop\aula dia 180517\aula dia 180517\bin\Debug\MySql.Data.dll

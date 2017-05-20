@@ -1,0 +1,293 @@
+MySqlConnection : Responsável por genrenciar uma conexão com BD.
+
+MySqlCommand : Controla as operações no BD.
+
+ * Depende do Tipo de operação pra escolher o método apropriado.
+
+ExecuteReader: Retornar tabela
+
+ExecuteNonQuery: Manuntenção(ex: update, delete, etc)
+
+ExecuteScalar: Retorna um valor numérico
+
+------------------------------------------------------------------------------------------
+
+ * Cofiguração de uma operação no BD.
+
+MySqlConnection conn = new MySqlConnection("Server=localhost;Database=lp2;Uid=root;Pwd=");
+
+MySqlCommand cmd = new MySqlCommand();
+cmd.Connection = conn;
+cmd.CommandText = "SELECT COUNT(1) FROM Pessoa;";
+cmd.Connection.Open(); // conn.Open();
+
+------------------------------------------------------------------------------------------
+
+ * Execução
+
+cmd.Connection.Open(); // conn.Open();
+int result = Convert.ToInt32(cmd.ExecuteScalar()); -- Usa apenas para operações que ultilizam valor numérico
+cmd.Connection.Close(); // conn.Close();
+
+------------------------------------------------------------------------------------------
+
+ExecuteReader: Realiza consultas que retornam dados em tabelas.
+
+Classe: MySqlDataReader
+
+MySqlDataReader resultado;
+resultado = cmd.ExecuteReader();
+
+if(resultado.HasRows)
+	{
+	while (resultado.Read()) 
+		{
+		  int id = resultado.GetINt32(0);
+		  char sexo = resultado.GetChar(1);
+		}
+	}
+
+------------------------------------------------------------------------------------------
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using MySql.Data;
+using MySql.Data.MySqlClient;
+
+namespace Serjão_berranteiro
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            MySqlConnection conn = new MySqlConnection("Server=localhost;Database=turma;Uid=root;Pwd=");
+
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = conn;
+            //cmd.CommandText = "SELECT COUNT(1) FROM Pessoa;";
+            cmd.CommandText = "SELECT * FROM Pessoa;";
+            //cmd.Connection.Open(); 
+            conn.Open();
+            ////int result = (int)cmd.ExecuteScalar();
+            //int result = Convert.ToInt32(cmd.ExecuteScalar());
+            MySqlDataReader resultado = cmd.ExecuteReader();
+            if(resultado.HasRows)
+            {
+                while(resultado.Read())
+                {
+                    int id = resultado.GetInt32(0);
+                    string nome = resultado.GetString(1);
+                    Console.WriteLine("ID: {0} Nome: {1}", id, nome);
+                }
+            }
+            conn.Close();
+            //Console.WriteLine(result);
+            
+
+
+        }
+    }
+}
+
+------------------------------------------------------------------------------------------
+
+INSERT INTO <tabela> (col1, col2, ..., colN)
+	VALUES (valor1, valor2, valor3, ..., valorN)
+
+
+UPDATE <tabela>
+SET col1 = valor1, col2 = valor2, ...
+WHERE <condição>
+
+DELETE FROM <tabela>
+WHERE <condição>
+
+------------------------------------------------------------------------------------------
+
+cmd.CommandText -> Objeto da Classe MySqlCommand
+
+-> "SELECT * FROM Pessoa WHERE p.name = '"+valor+"';";
+
+As consultasb são montadas usando o input do usuário.
+
+-> "SELECT * FROM Pessoa WHERE p.name = '@nome' 
+cmd.Parameters.AddWithValue("@nome", "Francisco");
+
+------------------------------------------------------------------------------------------
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using MySql.Data;
+using MySql.Data.MySqlClient;
+using MySql.Data.Types;
+
+namespace ConsoleApplication2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Pessoa p = new Pessoa();
+            Console.Write("Digite Nome: ");
+            p.Nome = Console.ReadLine();
+            Console.Write("Digite Sobrenome: ");
+            p.Sobrenome = Console.ReadLine();
+            Cadastrar(p);
+
+            MySqlCommand cmd = new MySqlCommand()
+            {
+                Connection = new MySqlConnection("Server=localhost;Database=turma;Uid=root;Pwd="),
+                CommandText = "SELECT * FROM Pessoa"
+            };
+
+            cmd.Connection.Open();
+            MySqlDataReader resultado = cmd.ExecuteReader();
+            if (resultado.HasRows)
+            {
+                while (resultado.Read())
+                {
+                    int id = resultado.GetInt32(0);
+                    string nome = resultado.GetString(1);
+                    string sobrenome = resultado.GetString(2);
+                    Console.WriteLine("ID: {0} Nome: {1} Sobrenome: {2}", id, nome, sobrenome);
+                }
+            }
+            cmd.Connection.Close();
+            Console.WriteLine(resultado);
+        }
+        static void Cadastrar(Pessoa p)
+        {
+            MySqlCommand cmd = new MySqlCommand()
+            {
+                Connection = new MySqlConnection("Server=localhost;Database=turma;Uid=root;Pwd="),
+                CommandText = "INSERT INTO Pessoa (Nome, Sobrenome) VALUES (@nome, @sobrenome);"
+            };
+
+            cmd.Parameters.AddWithValue("@Nome", p.Nome);
+            cmd.Parameters.AddWithValue("@sobrenome", p.Sobrenome);
+
+            cmd.Connection.Open();
+            cmd.ExecuteNonQuery();
+            cmd.Connection.Close();
+
+            
+
+        }
+    }
+}
+
+------- Classe Pessoa
+
+class Pessoa
+    {
+        public int Id { get; set; }
+        public string Nome { get; set; }
+        public string Sobrenome { get; set; }
+    }
+
+--------------------------------
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using MySql.Data;
+using MySql.Data.MySqlClient;
+using MySql.Data.Types;
+
+namespace ConsoleApplication2
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            Pessoa p = new Pessoa();
+            Console.Write("Digite Nome: ");
+            p.Nome = Console.ReadLine();
+            Console.Write("Digite Sobrenome: ");
+            p.Sobrenome = Console.ReadLine();
+            Cadastrar(p);
+
+            MySqlCommand cmd = new MySqlCommand()
+            {
+                Connection = new MySqlConnection("Server=localhost;Database=turma;Uid=root;Pwd="),
+                CommandText = "SELECT * FROM Pessoa"
+            };
+
+            cmd.Connection.Open();
+            MySqlDataReader resultado = cmd.ExecuteReader();
+            if (resultado.HasRows)
+            {
+                while (resultado.Read())
+                {
+                    int id = resultado.GetInt32(0);
+                    string nome = resultado.GetString(1);
+                    string sobrenome = resultado.GetString(2);
+                    Console.WriteLine("ID: {0} Nome: {1} Sobrenome: {2}", id, nome, sobrenome);
+                }
+            }
+            cmd.Connection.Close();
+            Console.WriteLine(resultado);
+        }
+        static void Cadastrar(Pessoa p)
+        {
+            MySqlCommand cmd = new MySqlCommand()
+            {
+                Connection = new MySqlConnection("Server=localhost;Database=turma;Uid=root;Pwd="),
+                CommandText = "INSERT INTO Pessoa (Nome, Sobrenome) VALUES (@nome, @sobrenome);"
+            };
+
+            cmd.Parameters.AddWithValue("@Nome", p.Nome);
+            cmd.Parameters.AddWithValue("@sobrenome", p.Sobrenome);
+
+            cmd.Connection.Open();
+            cmd.ExecuteNonQuery();
+            cmd.Connection.Close();
+
+            
+
+        }
+
+        static void Consulta(List<Pessoa> people)
+        {
+            List<Pessoa> pessoas = new List<Pessoa>();
+
+            MySqlCommand cmd = new MySqlCommand()
+            {
+                Connection = new MySqlConnection("Server=localhost;Database=turma;Uid=root;Pwd="),
+                CommandText = "SELECT * FROM Pessoa"
+            };
+
+            cmd.Connection.Open();
+            MySqlDataReader resultado = cmd.ExecuteReader();
+            if (resultado.HasRows)
+            {
+                while (resultado.Read())
+                {
+                    Pessoa p = new Pessoa();
+                    p.Id = resultado.GetInt32(0);
+                    p.Nome = resultado.GetString(1);
+                    p.Sobrenome= resultado.GetString(2);
+                    pessoas.Add(p);
+                    
+                }
+            }
+
+            foreach (Pessoa p in pessoas)
+            {
+                Console.WriteLine("Id = {0}\n Nome = {1}\n Sobrenome = {2}", p.Id, p.Nome, p.Sobrenome);
+            }
+
+            cmd.Connection.Close();
+            
+        }
+    }
+}
