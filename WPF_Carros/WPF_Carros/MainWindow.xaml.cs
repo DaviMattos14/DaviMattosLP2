@@ -71,6 +71,29 @@ namespace WPF_Carros
 
             cmd.Connection.Close();
         }
+
+        private void Dono()
+        {
+            MySqlCommand cmd = new MySqlCommand()
+            {
+                Connection = new MySqlConnection("Server=localhost;Database=test;Uid=root;Pwd="),
+                CommandText = "SELECT Dono FROM CARROS"
+            };
+
+            cmd.Connection.Open();
+
+            MySqlDataReader Dono = cmd.ExecuteReader();
+
+            if (Dono.HasRows)
+            {
+                while (Dono.Read())
+                {
+                    lboxDono.Items.Add(Dono.GetString(0));
+                }
+            }
+
+            cmd.Connection.Close();
+        }
         private void Cadastrar()
         {
             MySqlCommand cmd = new MySqlCommand()
@@ -107,8 +130,10 @@ namespace WPF_Carros
         {
             lboxModelo.Items.Clear();
             lboxPlaca.Items.Clear();
+            lboxDono.Items.Clear();
             Modelo();
             Placa();
+            Dono();
         }
     }
 }

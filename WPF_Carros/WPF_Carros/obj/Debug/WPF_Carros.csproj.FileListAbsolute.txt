@@ -1,1 +1,16 @@
 c:\users\davi\documents\visual studio 2015\Projects\WPF_Carros\WPF_Carros\bin\Debug\WPF_Carros.exe.config
+C:\DaviMattosLP2\WPF_Carros\WPF_Carros\bin\Debug\WPF_Carros.exe.config
+C:\DaviMattosLP2\WPF_Carros\WPF_Carros\bin\Debug\WPF_Carros.exe
+C:\DaviMattosLP2\WPF_Carros\WPF_Carros\bin\Debug\WPF_Carros.pdb
+C:\DaviMattosLP2\WPF_Carros\WPF_Carros\bin\Debug\MySql.Data.dll
+C:\DaviMattosLP2\WPF_Carros\WPF_Carros\obj\Debug\WPF_Carros.csprojResolveAssemblyReference.cache
+C:\DaviMattosLP2\WPF_Carros\WPF_Carros\obj\Debug\MainWindow.g.cs
+C:\DaviMattosLP2\WPF_Carros\WPF_Carros\obj\Debug\App.g.cs
+C:\DaviMattosLP2\WPF_Carros\WPF_Carros\obj\Debug\WPF_Carros_MarkupCompile.cache
+C:\DaviMattosLP2\WPF_Carros\WPF_Carros\obj\Debug\WPF_Carros_MarkupCompile.lref
+C:\DaviMattosLP2\WPF_Carros\WPF_Carros\obj\Debug\MainWindow.baml
+C:\DaviMattosLP2\WPF_Carros\WPF_Carros\obj\Debug\WPF_Carros.g.resources
+C:\DaviMattosLP2\WPF_Carros\WPF_Carros\obj\Debug\WPF_Carros.Properties.Resources.resources
+C:\DaviMattosLP2\WPF_Carros\WPF_Carros\obj\Debug\WPF_Carros.csproj.GenerateResource.Cache
+C:\DaviMattosLP2\WPF_Carros\WPF_Carros\obj\Debug\WPF_Carros.exe
+C:\DaviMattosLP2\WPF_Carros\WPF_Carros\obj\Debug\WPF_Carros.pdb

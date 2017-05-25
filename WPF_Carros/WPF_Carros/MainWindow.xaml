@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_Carros"
         mc:Ignorable="d"
-        Title="MainWindow" Height="346" Width="606">
+        Title="MainWindow" Height="344" Width="689">
     <Grid Margin="0,0,-8,0">
         <Label x:Name="lbmodelo" Content="Modelo: " HorizontalAlignment="Left" Margin="23,20,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label_Copy" Content="Ano: " HorizontalAlignment="Left" Margin="31,63,0,0" VerticalAlignment="Top"/>
@@ -21,6 +21,8 @@
         <Label x:Name="label" Content="Modelos:" HorizontalAlignment="Left" Margin="398,10,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label1" Content="Placas" HorizontalAlignment="Left" Margin="495,10,0,0" VerticalAlignment="Top"/>
         <Button x:Name="btAtualizar" Content="Lista de Carros" HorizontalAlignment="Left" Margin="57,259,0,0" VerticalAlignment="Top" Width="108" Height="27" Click="btAtualizar_Click"/>
+        <ListBox x:Name="lboxDono" HorizontalAlignment="Left" Height="255" Margin="583,41,0,0" VerticalAlignment="Top" Width="86"/>
+        <Label x:Name="label1_Copy" Content="Dono" HorizontalAlignment="Left" Margin="583,10,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
