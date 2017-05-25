@@ -31,7 +31,7 @@ namespace WPF_Carros
             MySqlCommand cmd = new MySqlCommand()
             {
                 Connection = new MySqlConnection("Server=localhost;Database=test;Uid=root;Pwd="),
-                CommandText = "SELECT Modelo FROM CARROS"
+                CommandText = "SELECT Modelo, Placa, Dono FROM CARROS"
             };
 
             cmd.Connection.Open();
@@ -43,57 +43,14 @@ namespace WPF_Carros
                 while (result.Read())
                 {
                     lboxModelo.Items.Add(result.GetString(0));
+                    lboxPlaca.Items.Add(result.GetString(1));
+                    lboxDono.Items.Add(result.GetString(2));
                 }
             }
 
             cmd.Connection.Close();
         }
 
-        private void Placa()
-        {
-            MySqlCommand cmd = new MySqlCommand()
-            {
-                Connection = new MySqlConnection("Server=localhost;Database=test;Uid=root;Pwd="),
-                CommandText = "SELECT Placa FROM CARROS"
-            };
-
-            cmd.Connection.Open();
-
-            MySqlDataReader Placa = cmd.ExecuteReader();
-
-            if (Placa.HasRows)
-            {
-                while (Placa.Read())
-                {
-                    lboxPlaca.Items.Add(Placa.GetString(0));
-                }
-            }
-
-            cmd.Connection.Close();
-        }
-
-        private void Dono()
-        {
-            MySqlCommand cmd = new MySqlCommand()
-            {
-                Connection = new MySqlConnection("Server=localhost;Database=test;Uid=root;Pwd="),
-                CommandText = "SELECT Dono FROM CARROS"
-            };
-
-            cmd.Connection.Open();
-
-            MySqlDataReader Dono = cmd.ExecuteReader();
-
-            if (Dono.HasRows)
-            {
-                while (Dono.Read())
-                {
-                    lboxDono.Items.Add(Dono.GetString(0));
-                }
-            }
-
-            cmd.Connection.Close();
-        }
         private void Cadastrar()
         {
             MySqlCommand cmd = new MySqlCommand()
@@ -132,8 +89,6 @@ namespace WPF_Carros
             lboxPlaca.Items.Clear();
             lboxDono.Items.Clear();
             Modelo();
-            Placa();
-            Dono();
         }
     }
 }
