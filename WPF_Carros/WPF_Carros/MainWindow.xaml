@@ -1,0 +1,26 @@
+﻿<Window x:Class="WPF_Carros.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Carros"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="346" Width="606">
+    <Grid Margin="0,0,-8,0">
+        <Label x:Name="lbmodelo" Content="Modelo: " HorizontalAlignment="Left" Margin="23,20,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy" Content="Ano: " HorizontalAlignment="Left" Margin="31,63,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy1" Content="Placa: " HorizontalAlignment="Left" Margin="31,105,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy2" Content="Dono: " HorizontalAlignment="Left" Margin="31,156,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btCadastrar" Content="Cadastrar" HorizontalAlignment="Left" Margin="57,215,0,0" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.173,-1.6" Height="27" Click="btCadastrar_Click"/>
+        <TextBox x:Name="txtModelo" HorizontalAlignment="Left" Height="23" Margin="85,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176"/>
+        <TextBox x:Name="txtAno" HorizontalAlignment="Left" Height="23" Margin="85,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtPlaca" HorizontalAlignment="Left" Height="23" Margin="85,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtDono" HorizontalAlignment="Left" Height="23" Margin="85,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176"/>
+        <ListBox x:Name="lboxModelo" HorizontalAlignment="Left" Height="255" Margin="398,41,0,0" VerticalAlignment="Top" Width="92"/>
+        <ListBox x:Name="lboxPlaca" HorizontalAlignment="Left" Height="255" Margin="495,41,0,0" VerticalAlignment="Top" Width="83"/>
+        <Label x:Name="label" Content="Modelos:" HorizontalAlignment="Left" Margin="398,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="Placas" HorizontalAlignment="Left" Margin="495,10,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btAtualizar" Content="Lista de Carros" HorizontalAlignment="Left" Margin="57,259,0,0" VerticalAlignment="Top" Width="108" Height="27" Click="btAtualizar_Click"/>
+
+    </Grid>
+</Window>
