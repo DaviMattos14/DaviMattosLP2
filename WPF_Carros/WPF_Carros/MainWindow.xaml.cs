@@ -26,16 +26,48 @@ namespace WPF_Carros
             InitializeComponent();
         }
 
+        List<Carros> ConsultaPlaca(string placa)
+        {
+            List<Carros> car = new List<Carros>();
+            MySqlCommand cmd = new MySqlCommand()
+            {
+                Connection = new MySqlConnection("Server=127.0.0.1;Database=test;Uid=root;Pwd=root"),
+                CommandText = "SELECT * FROM Carros WHERE Placa = @placa"
+            };
+
+            cmd.Parameters.AddWithValue("@placa", placa);
+
+            cmd.Connection.Open();
+            MySqlDataReader result = cmd.ExecuteReader();
+            if (result.HasRows)
+            {
+                while (result.Read())
+                {
+                    Carros c = new Carros();
+                    c.Id = result.GetInt32(0);
+                    c.Ano = result.GetInt32(1);
+                    c.Dono = result.GetString(2);
+                    c.Modelo = result.GetString(3);
+                    c.Placa = result.GetString(4);
+                    car.Add(c);
+                }
+            }
+
+            cmd.Connection.Close();
+
+            return car;
+        }
         private void Consultar()
         {
             List<Carros> carro = new List<Carros>();
 
             MySqlCommand cmd = new MySqlCommand()
             {
-                Connection = new MySqlConnection("Server=localhost;Database=test;Uid=root;Pwd="),
+                Connection = new MySqlConnection("Server=localhost;Database=test;Uid=root;Pwd=root"),
                 CommandText = "SELECT * FROM CARROS WHERE Placa = @placa"
             };
 
+            cmd.Connection.Open();
             cmd.Parameters.AddWithValue("@placa", txtConsulta.Text);
 
             MySqlDataReader r = cmd.ExecuteReader();
@@ -53,6 +85,8 @@ namespace WPF_Carros
                     carro.Add(c);
                 }
             }
+            cmd.Connection.Close();
+            dataTabela.ItemsSource = carro;
             //else MessageBox.Show("NÃO EXISTE NENHUM CARRO COM ESSA PLACA!");
 
             
@@ -62,7 +96,7 @@ namespace WPF_Carros
         {
             MySqlCommand cmd = new MySqlCommand()
             {
-                Connection = new MySqlConnection("Server=localhost;Database=test;Uid=root;Pwd="),
+                Connection = new MySqlConnection("Server=localhost;Database=test;Uid=root;Pwd=root"),
                 CommandText = "SELECT Modelo, Placa, Dono FROM CARROS"
             };
 
@@ -87,7 +121,7 @@ namespace WPF_Carros
         {
             MySqlCommand cmd = new MySqlCommand()
             {
-                Connection = new MySqlConnection("Server=localhost;Database=test;Uid=root;Pwd="),
+                Connection = new MySqlConnection("Server=localhost;Database=test;Uid=root;Pwd=root"),
                 CommandText = "INSERT INTO Carros(Modelo, Ano, Placa, Dono) VALUES (@modelo, @ano, @placa, @dono)"
             };
 
@@ -125,6 +159,13 @@ namespace WPF_Carros
 
         private void btnConsulta_Click(object sender, RoutedEventArgs e)
         {
+            List<Carros> car = ConsultaPlaca(txtConsulta.Text);
+            if (car.Count == 0)
+                MessageBox.Show("Essa Placa não se encontra no nosso registro.");
+            else
+                dataTabela.ItemsSource = car;
+            txtConsulta.Clear();
+
 
         }
     }

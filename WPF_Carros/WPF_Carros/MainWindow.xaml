@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_Carros"
         mc:Ignorable="d"
-        Title="MainWindow" Height="363" Width="684">
+        Title="MainWindow" Height="371" Width="1070">
     <Grid Margin="0,0,-8,0">
         <Label x:Name="lbmodelo" Content="Modelo: " HorizontalAlignment="Left" Margin="23,20,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label_Copy" Content="Ano: " HorizontalAlignment="Left" Margin="31,63,0,0" VerticalAlignment="Top"/>
@@ -26,6 +26,8 @@
         <TextBox x:Name="txtConsulta" HorizontalAlignment="Left" Height="23" Margin="85,253,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
         <Button x:Name="btnConsulta" Content="Consultar " HorizontalAlignment="Left" Margin="210,253,0,0" VerticalAlignment="Top" Width="99" Height="23" Click="btnConsulta_Click"/>
         <Label x:Name="label2" Content="Placa :" HorizontalAlignment="Left" Margin="36,250,0,0" VerticalAlignment="Top" Width="49"/>
+        <DataGrid x:Name="dataTabela" HorizontalAlignment="Left" Margin="665,54,0,0" VerticalAlignment="Top" Height="255" Width="361"/>
+        <Label Content="Tabela" HorizontalAlignment="Left" Margin="665,28,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
