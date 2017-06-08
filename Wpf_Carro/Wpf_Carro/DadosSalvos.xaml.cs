@@ -64,7 +64,7 @@ namespace Wpf_Carro
         {
             List<Carro> car = DadoSalvo();
             if (car.Count == 0)
-                MessageBox.Show("Essa Placa não se encontra em nosso registro.");
+                MessageBox.Show("Não há registros salvos!");
             else
             {
                 dataTabela.ItemsSource = car;
