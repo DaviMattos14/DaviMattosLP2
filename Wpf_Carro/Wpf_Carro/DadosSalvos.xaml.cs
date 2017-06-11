@@ -23,6 +23,14 @@ namespace Wpf_Carro
         public DadosSalvos()
         {
             InitializeComponent();
+            List<Carro> car = DadoSalvo();
+            if (car.Count == 0)
+                MessageBox.Show("Não há registros salvos!");
+            else
+            {
+                dataTabela.ItemsSource = car;
+                dataTabela.CanUserAddRows = false;
+            }
         }
 
         private void btnExit_Click(object sender, RoutedEventArgs e)
@@ -35,7 +43,8 @@ namespace Wpf_Carro
             List<Carro> car = new List<Carro>();
             MySqlCommand cmd = new MySqlCommand()
             {
-                Connection = new MySqlConnection("Server=127.0.0.1;Database=test;Uid=root;Pwd=root"),
+                //Connection = new MySqlConnection("Server=127.0.0.1;Database=test;Uid=root;Pwd=root"),
+                Connection = new MySqlConnection("Server=localhost;Database=test;Uid=root;Pwd="),
                 CommandText = "SELECT * FROM Carros"
             };
 
@@ -47,10 +56,10 @@ namespace Wpf_Carro
                 {
                     Carro c = new Carro();
                     c.Id = result.GetInt32(0);
-                    c.Ano = result.GetInt32(1);
-                    c.Dono = result.GetString(2);
+                    c.Dono = result.GetString(1);
+                    c.Placa = result.GetString(2);
                     c.Modelo = result.GetString(3);
-                    c.Placa = result.GetString(4);
+                    c.Ano = result.GetInt32(4);
                     car.Add(c);
                 }
             }
@@ -58,20 +67,6 @@ namespace Wpf_Carro
             cmd.Connection.Close();
 
             return car;
-        }
-
-        private void btnCarregar_Click(object sender, RoutedEventArgs e)
-        {
-            List<Carro> car = DadoSalvo();
-            if (car.Count == 0)
-                MessageBox.Show("Não há registros salvos!");
-            else
-            {
-                dataTabela.ItemsSource = car;
-                dataTabela.CanUserAddRows = false;
-            }
-                
-
         }
     }
 }

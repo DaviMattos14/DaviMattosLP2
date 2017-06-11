@@ -5,7 +5,6 @@
     <Grid Margin="0,0,-8,5">
         <DataGrid x:Name="dataTabela" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="281" Width="485"/>
         <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="420,299,0,0" VerticalAlignment="Top" Width="75" Click="btnExit_Click"/>
-        <Button x:Name="btnCarregar" Content="Carregar" HorizontalAlignment="Left" Margin="25,299,0,0" VerticalAlignment="Top" Width="75" Click="btnCarregar_Click"/>
 
     </Grid>
 </Window>

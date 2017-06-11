@@ -47,10 +47,10 @@ namespace Wpf_Carro
         //        {
         //            Carro c = new Carro();
         //            c.Id = result.GetInt32(0);
-        //            c.Ano = result.GetInt32(1);
-        //            c.Dono = result.GetString(2);
-        //            c.Modelo = result.GetString(3);
-        //            c.Placa = result.GetString(4);
+                    //c.Dono = result.GetString(1);
+                    //c.Placa = result.GetString(2);
+                    //c.Modelo = result.GetString(3);
+                    //c.Ano = result.GetInt32(4);
         //            car.Add(c);
         //        }
         //    }
@@ -65,11 +65,12 @@ namespace Wpf_Carro
             List<Carro> car = new List<Carro>();
             MySqlCommand cmd = new MySqlCommand()
             {
-                Connection = new MySqlConnection("Server=127.0.0.1;Database=test;Uid=root;Pwd=root"),
+                //Connection = new MySqlConnection("Server=127.0.0.1;Database=test;Uid=root;Pwd=root"),
+                Connection = new MySqlConnection("Server=localhost;Database=test;Uid=root;Pwd="),
                 CommandText = "SELECT * FROM Carros WHERE Placa = @placa"
             };
 
-            cmd.Parameters.AddWithValue("@placa", placa);
+            cmd.Parameters.AddWithValue("@placa", txtConsulta.Text);
 
             cmd.Connection.Open();
             MySqlDataReader result = cmd.ExecuteReader();
@@ -79,10 +80,10 @@ namespace Wpf_Carro
                 {
                     Carro c = new Carro();
                     c.Id = result.GetInt32(0);
-                    c.Ano = result.GetInt32(1);
-                    c.Dono = result.GetString(2);
+                    c.Dono = result.GetString(1);
+                    c.Placa = result.GetString(2);
                     c.Modelo = result.GetString(3);
-                    c.Placa = result.GetString(4);
+                    c.Ano = result.GetInt32(4);
                     car.Add(c);
                 }
             }

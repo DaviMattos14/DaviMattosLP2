@@ -41,14 +41,16 @@ namespace Wpf_Carro
         {
             MySqlCommand cmd = new MySqlCommand()
             {
-                Connection = new MySqlConnection("Server=127.0.0.1;Database=test;Uid=root;Pwd=root"),
-                CommandText = "INSERT INTO Carros(Modelo, Ano, Placa, Dono) VALUES (@modelo, @ano, @placa, @dono)"
+                Connection = new MySqlConnection("Server=localhost;Database=test;Uid=root;Pwd="),
+                //Connection = new MySqlConnection("Server=127.0.0.1;Database=test;Uid=root;Pwd=root"),
+                CommandText = "INSERT INTO Carros(Dono, Placa, Modelo, Ano) VALUES (@dono, @placa, @modelo, @ano)"
             };
-
+            cmd.Parameters.AddWithValue("@dono", txtDono.Text);
+            cmd.Parameters.AddWithValue("@placa", txtPlaca.Text);
             cmd.Parameters.AddWithValue("@modelo", txtModelo.Text);
             cmd.Parameters.AddWithValue("@ano", txtAno.Text);
-            cmd.Parameters.AddWithValue("@placa", txtPlaca.Text);
-            cmd.Parameters.AddWithValue("@dono", txtDono.Text);
+            
+            
 
             cmd.Connection.Open();
             cmd.ExecuteNonQuery();

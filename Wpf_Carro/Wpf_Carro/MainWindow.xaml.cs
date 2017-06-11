@@ -45,7 +45,8 @@ namespace Wpf_Carro
 
         private void btnAlterar_Click(object sender, RoutedEventArgs e)
         {
-
+            Atualizar c = new Atualizar();
+            c.ShowDialog();
         }
     }
 }
