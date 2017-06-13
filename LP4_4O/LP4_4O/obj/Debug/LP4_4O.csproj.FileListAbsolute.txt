@@ -1,0 +1,15 @@
+c:\users\alunoct\documents\visual studio 2013\Projects\LP4_4O\LP4_4O\bin\Debug\LP4_4O.exe.config
+c:\users\alunoct\documents\visual studio 2013\Projects\LP4_4O\LP4_4O\bin\Debug\LP4_4O.exe
+c:\users\alunoct\documents\visual studio 2013\Projects\LP4_4O\LP4_4O\bin\Debug\LP4_4O.pdb
+c:\users\alunoct\documents\visual studio 2013\Projects\LP4_4O\LP4_4O\obj\Debug\LP4_4O.csprojResolveAssemblyReference.cache
+c:\users\alunoct\documents\visual studio 2013\Projects\LP4_4O\LP4_4O\obj\Debug\Cadastro.baml
+c:\users\alunoct\documents\visual studio 2013\Projects\LP4_4O\LP4_4O\obj\Debug\MainWindow.baml
+c:\users\alunoct\documents\visual studio 2013\Projects\LP4_4O\LP4_4O\obj\Debug\Cadastro.g.cs
+c:\users\alunoct\documents\visual studio 2013\Projects\LP4_4O\LP4_4O\obj\Debug\MainWindow.g.cs
+c:\users\alunoct\documents\visual studio 2013\Projects\LP4_4O\LP4_4O\obj\Debug\App.g.cs
+c:\users\alunoct\documents\visual studio 2013\Projects\LP4_4O\LP4_4O\obj\Debug\LP4_4O_MarkupCompile.cache
+c:\users\alunoct\documents\visual studio 2013\Projects\LP4_4O\LP4_4O\obj\Debug\LP4_4O.g.resources
+c:\users\alunoct\documents\visual studio 2013\Projects\LP4_4O\LP4_4O\obj\Debug\LP4_4O.Properties.Resources.resources
+c:\users\alunoct\documents\visual studio 2013\Projects\LP4_4O\LP4_4O\obj\Debug\LP4_4O.csproj.GenerateResource.Cache
+c:\users\alunoct\documents\visual studio 2013\Projects\LP4_4O\LP4_4O\obj\Debug\LP4_4O.exe
+c:\users\alunoct\documents\visual studio 2013\Projects\LP4_4O\LP4_4O\obj\Debug\LP4_4O.pdb
