@@ -1,0 +1,5 @@
+    ConsoleKeyInfo input;
+            input = Console.ReadKey(true);
+            Console.WriteLine("You Pressed {0}", input.Key.ToString());
+            Console.ReadLine();
+        
