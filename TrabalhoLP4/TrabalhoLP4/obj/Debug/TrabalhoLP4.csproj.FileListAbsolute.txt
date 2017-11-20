@@ -1,0 +1,12 @@
+c:\users\jogar\documents\visual studio 2017\Projects\TrabalhoLP4\TrabalhoLP4\bin\Debug\TrabalhoLP4.exe.config
+c:\users\jogar\documents\visual studio 2017\Projects\TrabalhoLP4\TrabalhoLP4\bin\Debug\TrabalhoLP4.exe
+c:\users\jogar\documents\visual studio 2017\Projects\TrabalhoLP4\TrabalhoLP4\bin\Debug\TrabalhoLP4.pdb
+c:\users\jogar\documents\visual studio 2017\Projects\TrabalhoLP4\TrabalhoLP4\obj\Debug\TrabalhoLP4.csprojResolveAssemblyReference.cache
+c:\users\jogar\documents\visual studio 2017\Projects\TrabalhoLP4\TrabalhoLP4\obj\Debug\TrabalhoLP4.exe
+c:\users\jogar\documents\visual studio 2017\Projects\TrabalhoLP4\TrabalhoLP4\obj\Debug\TrabalhoLP4.pdb
+C:\Users\Davi\Desktop\TrabalhoLP4\TrabalhoLP4\bin\Debug\TrabalhoLP4.exe.config
+C:\Users\Davi\Desktop\TrabalhoLP4\TrabalhoLP4\obj\Debug\TrabalhoLP4.exe
+C:\Users\Davi\Desktop\TrabalhoLP4\TrabalhoLP4\obj\Debug\TrabalhoLP4.pdb
+C:\Users\Davi\Desktop\TrabalhoLP4\TrabalhoLP4\bin\Debug\TrabalhoLP4.exe
+C:\Users\Davi\Desktop\TrabalhoLP4\TrabalhoLP4\bin\Debug\TrabalhoLP4.pdb
+C:\Users\Davi\Desktop\TrabalhoLP4\TrabalhoLP4\obj\Debug\TrabalhoLP4.csprojResolveAssemblyReference.cache
