@@ -1,0 +1,6 @@
+c:\users\davi\documents\visual studio 2015\Projects\TenhoProvaAmanhã1\TenhoProvaAmanhã1\bin\Debug\TenhoProvaAmanhã1.exe.config
+c:\users\davi\documents\visual studio 2015\Projects\TenhoProvaAmanhã1\TenhoProvaAmanhã1\bin\Debug\TenhoProvaAmanhã1.exe
+c:\users\davi\documents\visual studio 2015\Projects\TenhoProvaAmanhã1\TenhoProvaAmanhã1\bin\Debug\TenhoProvaAmanhã1.pdb
+c:\users\davi\documents\visual studio 2015\Projects\TenhoProvaAmanhã1\TenhoProvaAmanhã1\obj\Debug\TenhoProvaAmanhã1.csprojResolveAssemblyReference.cache
+c:\users\davi\documents\visual studio 2015\Projects\TenhoProvaAmanhã1\TenhoProvaAmanhã1\obj\Debug\TenhoProvaAmanhã1.exe
+c:\users\davi\documents\visual studio 2015\Projects\TenhoProvaAmanhã1\TenhoProvaAmanhã1\obj\Debug\TenhoProvaAmanhã1.pdb
